@@ -1,0 +1,52 @@
+* {
+	font-family : Verdana;
+	font-size: 14px;
+}
+
+input,select,label {
+    margin:10px;
+}
+
+#add {
+	float : right; 
+}
+
+#staticColumns, 
+#addFormContainer, 
+#storedTestCases {
+	border: 1px solid #000000;
+	margin : 10px;
+}
+
+#storedTestCases {
+	overflow : auto;
+}
+
+.invalidInput {
+	border: 1px solid #ff0000;
+	background-color: rgba(255,0,0,0.2);
+	opacity: 0.2;
+}
+
+.cell,.colName {
+	display : inline-block;
+	width: 100px;
+	padding : 5px;	
+	vertical-align: middle;
+}
+
+.row {
+	padding: 5px;
+	width:2000px;
+}
+
+.row:nth-child(even) {
+	background-color : #e5e5e5;
+}
+
+#tblHeader {
+	padding: 5px;
+	background-color : #000000;
+	color: #ffffff;
+	width:2000px;
+}
