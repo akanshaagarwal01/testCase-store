@@ -18,79 +18,91 @@
             type: "text",
             name: "id",
             label: "Id",
-            required: true
+            required: true,
+			width: 100
         },
 		{
             type: "text",
             name: "testCaseId",
-            label: "Test Case Id",
-            required: true
+            label: "Test-Case-Id",
+            required: true,
+			width: 150
         },
 		{
             type: "text",
             name: "dependsOn",
-            label: "Depends On",
-            required: false
+            label: "Depends-On",
+            required: false,
+			width: 200
         },
 		{
             type: "textarea",
             name: "testScenario",
-            label: "Test Scenario",
-            required: false
+            label: "Test-Scenario",
+            required: false,
+			width: 200
         },
 		{
             type: "text",
             name: "testStep",
-            label: "Test Step",
-            required: false
+            label: "Test-Step",
+            required: false,
+			width: 150
         },
 		{
             type: "select",
             name: "type",
             label: "Type",
 			options: ["GET","PUT","POST","DELETE"],
-			selected: "POST",
-            required: true
+			selected: "GET",
+            required: true,
+			width: 100
         },
 		{
             type: "text",
             name: "apiPath",
-            label: "API Path",
-            required: true
+            label: "API-Path",
+            required: true,
+			width: 200
         },
 		{
             type: "textarea",
             name: "header",
             label: "Header",
             required: false,
-			validateJSON: true
+			validateJSON: true,
+			width: 300
         },
 		{
             type: "textarea",
             name: "params",
             label: "Params",
             required: false,
-			validateJSON: true
+			validateJSON: true,
+			width: 300
         },
 		{
             type: "textarea",
             name: "requestBody",
-            label: "Request Body",
+            label: "Request-Body",
             required: false,
-			validateJSON: true
+			validateJSON: true,
+			width: 300
         },
 		{
             type: "number",
             name: "responseCode",
-            label: "Response Code",
-            required: true
+            label: "Response-Code",
+            required: true,
+			width: 100
         },
 		{
             type: "textarea",
             name: "responseBody",
-            label: "Response Body",
+            label: "Response-Body",
             required: false,
-			validateJSON: true
+			validateJSON: true,
+			width: 300
         }
 	];
 	window.columns = columns;

@@ -9,13 +9,23 @@ input,select,label {
 
 #add {
 	float : right; 
+	position : absolute;
+	right:5px;
+	bottom : 5px;
+}
+
+#addFormContainer {
+	position : relative;
 }
 
 #staticColumns, 
 #addFormContainer, 
 #storedTestCases {
-	border: 1px solid #000000;
 	margin : 10px;
+}
+
+form {
+	border: 1px solid #000000;
 }
 
 #storedTestCases {
@@ -28,16 +38,43 @@ input,select,label {
 	opacity: 0.2;
 }
 
-.cell,.colName {
+.wrap,.cell,.colName{
 	display : inline-block;
-	width: 100px;
-	padding : 5px;	
+	padding : 2px 5px;	
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+.cell,.colName {
+	margin:10px;
+	max-height : 32px;
+}
+
+label {
+	font-weight : bold;
+}
+
+input,select,textarea {
+	margin: 5px;
 	vertical-align: middle;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.edit ,.clone ,.delete{
+	cursor : pointer;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	padding : 2px 7px;	
+}
+
 .row {
-	padding: 5px;
-	width:2000px;
+	width:3000px;
 }
 
 .row:nth-child(even) {
@@ -45,8 +82,12 @@ input,select,label {
 }
 
 #tblHeader {
-	padding: 5px;
 	background-color : #000000;
 	color: #ffffff;
-	width:2000px;
+	width:3000px;
+}
+
+.empty {
+	width : 102;
+	display : inline-block;
 }
