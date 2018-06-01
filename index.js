@@ -15,8 +15,12 @@
 			this._DOMElements = {
 				staticColumns: document.getElementById("staticColumns"),
 				addFormContainer: document.getElementById("addFormContainer"),
-				storedTestCases: document.getElementById("storedTestCases"),
-			};
+                storedTestCases: document.getElementById("storedTestCases"),
+                import: document.getElementById("import"),
+                export: document.getElementById("export")
+            };
+            this._DOMElements.import.addEventListener("click", this.importTestCases.bind(this));
+            this._DOMElements.export.addEventListener("click", this.exportTestCases.bind(this));
 		}
 		
 		renderElement(container,element) {
@@ -253,11 +257,11 @@
 		}
 		
 		importTestCases() {
-			
+			alert("i");
 		}
 		
 		exportTestCases() {
-			
+			alert("e");
 		}
 
 	}

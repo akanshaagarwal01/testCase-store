@@ -29,7 +29,8 @@ form {
 }
 
 #storedTestCases {
-	overflow : auto;
+    overflow : auto;
+    position : relative;
 }
 
 .invalidInput {
@@ -84,10 +85,29 @@ input[type=number]::-webkit-outer-spin-button {
 #tblHeader {
 	background-color : #000000;
 	color: #ffffff;
-	width:3000px;
+    width:3000px;
+    margin-top : 50px;
 }
 
 .empty {
 	width : 102;
 	display : inline-block;
+}
+
+#import{
+    cursor : pointer;
+	width: 40px;
+	height: 50px;
+    padding : 2px;
+    position: absolute;
+    right: 70px;
+}
+
+#export {
+    cursor : pointer;
+	width: 55px;
+	height: 40px;
+    padding : 5px;
+    position: absolute;
+    right: 0px;
 }
